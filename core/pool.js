@@ -19,6 +19,6 @@ db.connect((err)=>{
   console.log('MySql Connected!')
 });
 
-db.query= util.promisify{db.query};
+db.query= util.promisify(db.query);
 
 module.exports= db;
